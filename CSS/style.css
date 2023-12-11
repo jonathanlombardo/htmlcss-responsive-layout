@@ -67,6 +67,10 @@ i {
   margin-right: auto;
 }
 
+.container.tight {
+  max-width: 800px;
+}
+
 .row {
   margin-left: calc(var(--grid-padding) * -1);
   margin-right: calc(var(--grid-padding) * -1);
