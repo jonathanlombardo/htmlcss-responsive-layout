@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
@@ -42,7 +42,16 @@ i {
   --li-margin: 1em; /* margini lista FontAwesome */
   --li-width: 1.5em; /* markerwidth lista FontAwesome */
 
-  --main-color: rgba(255, 0, 0, 0.236);
+  --main-color: #9792e4;
+  --secondary-color: #0084fd;
+  --secondary-color-light: #b5ddff;
+  --footer-color: #333333;
+
+  --text-main-color: black;
+  --text-main-color-invert: white;
+  --text-secondary-color: #5a6e7f;
+  --text-footer-color: #9792e4;
+  --text-marked-color: #fdc15f;
 
   --grid-padding: 1rem;
   --container-padding: calc(var(--grid-padding) + 0px);
@@ -90,22 +99,28 @@ i {
 .btn {
   display: block;
   height: fit-content;
+  width: fit-content;
   text-align: center;
   padding: 12px 18px;
-  border-radius: 0;
-  background-color: #ffffff;
-  border: 1px solid black;
+  border-radius: 25px;
+  background-color: var(--text-main-color-invert);
+  color: var(--text-main-color);
   filter: brightness(1);
 }
 
 .btn.primary {
   background-color: var(--main-color);
-  border: 0px;
-  color: rgb(220, 44, 44);
+  color: var(--text-main-color-invert);
 }
 
-.btn.tight {
-  width: fit-content;
+.btn.hero {
+  background-color: var(--secondary-color);
+  color: var(--text-main-color-invert);
+}
+
+.btn.trans {
+  background-color: var(--text-secondary-color);
+  color: var(--main-color);
 }
 
 .btn:hover {
