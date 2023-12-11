@@ -1,0 +1,80 @@
+/* ##TABLET VIEW */
+
+@media screen and (min-width: 480px) {
+  /* #display */
+
+  .tablet-d-none {
+    display: none;
+  }
+
+  .tablet-d-block {
+    display: block;
+  }
+
+  /* #HEADER */
+
+  /* #HERO */
+
+  #hero .col {
+    width: calc(100% / 3);
+  }
+
+  #hero .card {
+    height: 100%;
+  }
+
+  #hero .col:first-of-type {
+    width: calc(100% / 3 * 2);
+  }
+
+  #hero .card .col {
+    width: 100%;
+  }
+
+  /* #PLANNING */
+}
+
+/* ##DESKTOP VIEW */
+
+@media screen and (min-width: 768px) {
+  /* #display */
+
+  .desktop-d-none {
+    display: none;
+  }
+
+  .desktop-d-block {
+    display: block;
+  }
+
+  /* #HEADER */
+
+  /* #HERO */
+
+  #hero .col {
+    width: calc(100% / 3);
+  }
+
+  #hero .card {
+    height: 100%;
+  }
+
+  #hero .col:first-of-type {
+    width: calc(100% / 3 * 2);
+  }
+
+  #hero .card .col {
+    width: 50%;
+  }
+
+  /* #PLANNING */
+
+  #planning .col:first-of-type {
+    width: 60%;
+  }
+
+  #planning .col:last-of-type {
+    width: 40%;
+    align-self: flex-end;
+  }
+}

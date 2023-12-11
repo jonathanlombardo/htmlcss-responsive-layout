@@ -70,6 +70,8 @@ i {
 .row {
   margin-left: calc(var(--grid-padding) * -1);
   margin-right: calc(var(--grid-padding) * -1);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -144,14 +146,14 @@ i {
 
 /* -- DEBUG */
 
-.db {
+/* .db {
   background-color: rgba(255, 0, 0, 0.236);
   border: 3px dashed black;
   background-clip: content-box;
-  /* min-height: 50px; */
-}
+  min-height: 50px;
+} */
 
-.db > * {
+.db * {
   background-color: rgba(255, 0, 0, 0.236);
   border: 2px dotted black;
   background-clip: content-box;
@@ -189,4 +191,39 @@ header > .container {
 
   /* debug */
   align-items: center;
+}
+
+/* ##HERO */
+
+#hero .col {
+  width: 100%;
+}
+
+#hero .card {
+  height: 100%;
+  border-radius: 18px;
+  background-color: var(--secondary-color-light);
+}
+
+#hero .card .col {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ##PLANNING */
+
+#planning {
+  background-color: var(--main-color);
+}
+
+#planning .col {
+  width: 100%;
+}
+
+#planning .card {
+  border-radius: 18px;
+}
+
+#planning .col:last-of-type .card {
+  background-color: var(--text-main-color-invert);
 }
