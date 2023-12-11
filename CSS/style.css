@@ -37,7 +37,7 @@ i {
 
 :root {
   --text-m: 1.5rem;
-  --space-m: 8px;
+  --space-m: 2rem;
 
   --li-margin: 1em; /* margini lista FontAwesome */
   --li-width: 1.5em; /* markerwidth lista FontAwesome */
@@ -122,6 +122,8 @@ a.btn.primary {
 a.btn.hero {
   background-color: var(--secondary-color);
   color: var(--text-main-color-invert);
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 a.btn.trans {
@@ -215,8 +217,24 @@ header .navbar li {
 
 /* ##HERO */
 
+#hero > .container {
+  padding-top: var(--space-m);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+#hero .card {
+  padding-top: var(--space-m);
+  padding-right: var(--space-m);
+  padding-bottom: 0;
+  padding-left: var(--space-m);
+}
+
 #hero .col {
   width: 100%;
+  min-height: fit-content;
+  text-align: center;
 }
 
 #hero .card {
@@ -227,6 +245,31 @@ header .navbar li {
 #hero .card .col {
   padding-top: 0;
   padding-bottom: 0;
+  text-align: left;
+}
+
+#hero .card .row {
+  height: 100%;
+}
+
+#hero .card .col:last-of-type {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+#hero .card > *:not(.row),
+#hero .card .col:first-of-type > * {
+  margin-bottom: var(--space-m);
+}
+
+#hero img {
+  max-height: 240px;
+}
+
+#hero p {
+  color: var(--text-secondary-color);
+  font-size: 1rem;
 }
 
 /* ##PLANNING */
