@@ -36,7 +36,9 @@ i {
 /* --CUSTOM PROPS */
 
 :root {
-  --text-m: 1.5rem;
+  --text-l: 2rem;
+  --text-m: 1.2rem;
+  --text-s: 1rem;
   --space-m: 2rem;
 
   --li-margin: 1em; /* margini lista FontAwesome */
@@ -224,7 +226,7 @@ header .navbar li {
 
 #hero {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: var(--text-m);
   color: var(--secondary-color);
 }
 
@@ -273,18 +275,63 @@ header .navbar li {
 
 #hero p {
   color: var(--text-secondary-color);
-  font-size: 1rem;
+  font-size: var(--text-s);
 }
 
 /* ##PLANNING */
+
+#planning {
+  font-size: var(--text-s);
+}
 
 #planning .col {
   width: 100%;
 }
 
+#planning .card {
+  padding-top: var(--space-m);
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+}
+
+#planning .card > * {
+  /* padding-top: var(--space-m); */
+  padding-bottom: var(--space-m);
+}
+
 #planning .col:last-of-type .card {
   background-color: var(--text-main-color-invert);
   color: var(--text-main-color);
+}
+
+#planning .col:first-of-type h3 {
+  font-size: var(--text-l);
+}
+
+#planning .col:last-of-type {
+  text-align: center;
+}
+
+#planning .col:last-of-type h3 {
+  font-size: var(--text-m);
+}
+
+#planning .col:last-of-type p {
+  font-style: italic;
+}
+
+#planning .arrow {
+  display: inline-block;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 50%;
+  background-color: var(--main-color);
+  width: 4rem;
+  aspect-ratio: 1/1;
+  line-height: 4rem;
+  padding-bottom: 0;
+  margin-bottom: var(--space-m);
 }
 
 /* ##PARTNERS */
