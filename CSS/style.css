@@ -192,6 +192,11 @@ section:nth-of-type(even) {
   color: var(--text-main-color-invert);
 }
 
+section .container {
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+}
+
 /* ##HEADER */
 
 header {
@@ -217,8 +222,7 @@ header .navbar li {
 
 /* ##HERO */
 
-#hero > .container {
-  padding-top: var(--space-m);
+#hero {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--secondary-color);
