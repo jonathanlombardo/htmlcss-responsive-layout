@@ -159,7 +159,7 @@ i {
 }
 
 .db i::after {
-  content: "ℹ️";
+  content: "X";
 }
 
 /* .db a::after {
@@ -167,3 +167,26 @@ i {
 } */
 
 /* ---------------------------------------- */
+
+/* ##display */
+
+.mobile-d-none {
+  display: none;
+}
+
+.mobile-d-block {
+  display: block;
+}
+
+/* ##HEADER */
+
+header {
+  background-color: var(--secondary-color);
+}
+
+header > .container {
+  justify-content: space-between;
+
+  /* debug */
+  align-items: center;
+}
