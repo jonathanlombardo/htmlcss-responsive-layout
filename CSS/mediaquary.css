@@ -44,6 +44,16 @@
   #benefit .col {
     width: 50%;
   }
+
+  /* #ABOUT US */
+
+  #about-us .col:first-of-type {
+    width: 60%;
+  }
+
+  #about-us .col:last-of-type {
+    width: 40%;
+  }
 }
 
 /* ##DESKTOP VIEW */

@@ -255,3 +255,8 @@ header > .container {
   background-color: var(--text-main-color-invert);
   color: var(--main-color);
 }
+
+/* ##ABOUT US */
+#about-us .col {
+  width: 100%;
+}
