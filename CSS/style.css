@@ -54,7 +54,7 @@ i {
   --text-marked-color: #fdc15f;
 
   --grid-padding: 1rem;
-  --container-padding: calc(var(--grid-padding) + 0px);
+  --container-padding: calc(var(--grid-padding) + 1rem);
 }
 
 /* -- GRID PROPS */
@@ -102,38 +102,38 @@ i {
   clear: both;
 }
 
-.btn {
+a.btn {
   display: block;
   height: fit-content;
   width: fit-content;
   text-align: center;
-  padding: 12px 18px;
+  padding: 5px 18px;
   border-radius: 25px;
   background-color: var(--text-main-color-invert);
   color: var(--text-main-color);
   filter: brightness(1);
 }
 
-.btn.primary {
+a.btn.primary {
   background-color: var(--main-color);
   color: var(--text-main-color-invert);
 }
 
-.btn.hero {
+a.btn.hero {
   background-color: var(--secondary-color);
   color: var(--text-main-color-invert);
 }
 
-.btn.trans {
+a.btn.trans {
   background-color: var(--text-secondary-color);
   color: var(--main-color);
 }
 
-.btn:hover {
+a.btn:hover {
   filter: brightness(0.95);
 }
 
-.btn:active {
+a.btn:active {
   filter: invert(0.2);
 }
 
@@ -141,11 +141,6 @@ i {
   display: flex;
   align-items: center;
   width: fit-content;
-}
-
-.navbar a {
-  display: block;
-  padding: 5px;
 }
 
 .card {
@@ -199,13 +194,23 @@ section:nth-of-type(even) {
 
 header {
   background-color: var(--secondary-color);
+  color: var(--text-main-color-invert);
 }
 
 header > .container {
   justify-content: space-between;
-
-  /* debug */
   align-items: center;
+}
+
+header .navbar li:not(#get-started-button),
+header .menu-bars {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header .navbar li {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /* ##HERO */
