@@ -144,6 +144,10 @@ i {
   padding: 5px;
 }
 
+.card {
+  border-radius: 18px;
+}
+
 /* -- DEBUG */
 
 /* .db {
@@ -201,7 +205,6 @@ header > .container {
 
 #hero .card {
   height: 100%;
-  border-radius: 18px;
   background-color: var(--secondary-color-light);
 }
 
@@ -220,10 +223,20 @@ header > .container {
   width: 100%;
 }
 
-#planning .card {
-  border-radius: 18px;
-}
-
 #planning .col:last-of-type .card {
   background-color: var(--text-main-color-invert);
+}
+
+/* ##PARTNERS */
+
+#partners .col {
+  width: 100%;
+}
+
+#partners .col:first-of-type .card {
+  background-color: transparent;
+}
+
+#partners .col .card {
+  background-color: var(--main-color);
 }
