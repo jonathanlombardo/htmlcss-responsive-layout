@@ -11,8 +11,6 @@
     display: block;
   }
 
-  /* #HEADER */
-
   /* #HERO */
 
   #hero .col {
@@ -31,8 +29,6 @@
     width: 100%;
   }
 
-  /* #PLANNING */
-
   /* #PARTNERS */
 
   #partners .card .col:first-of-type {
@@ -41,6 +37,12 @@
 
   #partners .card .col:last-of-type {
     width: 70%;
+  }
+
+  /* #BENEFIT */
+
+  #benefit .col {
+    width: 50%;
   }
 }
 
@@ -56,8 +58,6 @@
   .desktop-d-block {
     display: block;
   }
-
-  /* #HEADER */
 
   /* #HERO */
 
@@ -86,5 +86,11 @@
   #planning .col:last-of-type {
     width: 40%;
     align-self: flex-end;
+  }
+
+  /* #BENEFIT */
+
+  #benefit .col {
+    width: calc(100% / 3);
   }
 }
