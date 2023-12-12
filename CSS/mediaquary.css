@@ -54,6 +54,14 @@
   #about-us .col:last-of-type {
     width: 40%;
   }
+
+  #about-us .img-round-layer i {
+    font-size: clamp(1rem, 10vw, 80px);
+  }
+
+  #about-us .img-round-layer {
+    width: 100%;
+  }
 }
 
 /* ##DESKTOP VIEW */
@@ -108,5 +116,19 @@
 
   #benefit .col {
     width: calc(100% / 3);
+  }
+
+  /* #ABOUT US */
+
+  #about-us .col:first-of-type {
+    width: 70%;
+  }
+
+  #about-us .col:last-of-type {
+    width: 30%;
+  }
+
+  #about-us .img-round-layer i {
+    font-size: clamp(1rem, 6.8vw, 100px);
   }
 }

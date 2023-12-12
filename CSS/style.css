@@ -43,6 +43,7 @@ i {
   --text-s: 1rem;
 
   --space-m: 2rem;
+  --line-l: 30px;
 
   --li-margin: 1em; /* margini lista FontAwesome */
   --li-width: 1.5em; /* markerwidth lista FontAwesome */
@@ -152,6 +153,22 @@ a.btn:active {
   display: flex;
   align-items: center;
   width: fit-content;
+}
+
+.img-round-layer {
+  position: relative;
+}
+.img-round {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-round > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card {
@@ -440,6 +457,7 @@ header .navbar li {
 
 #benefit p {
   color: var(--text-secondary-color);
+  line-height: var(--line-l);
 }
 
 #benefit .card .benefit-tagpoint {
@@ -455,4 +473,40 @@ header .navbar li {
 /* ##ABOUT US */
 #about-us .col {
   width: 100%;
+}
+
+#about-us h2 {
+  margin-bottom: var(--space-m);
+  font-size: var(--text-xl);
+  color: var(--main-color);
+}
+
+#about-us h3 {
+  margin-bottom: var(--space-m);
+  font-size: var(--text-xm);
+  color: var(--main-color);
+}
+
+#about-us p {
+  line-height: var(--line-l);
+  margin-bottom: var(--space-m);
+  font-size: var(--text-m);
+}
+
+#about-us .img-round-layer {
+  width: 80%;
+  margin-bottom: var(--space-m);
+}
+
+#about-us .img-round-layer i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--main-color);
+  font-size: 80px;
+  font-size: clamp(60px, 21.4vw, 1000px);
+}
+
+#about-us .btn.trans i {
+  margin-right: 1em;
 }
