@@ -98,6 +98,12 @@
     align-self: flex-end;
   }
 
+  /* #PARTNERS */
+
+  #partners .card {
+    text-align: left;
+  }
+
   /* #BENEFIT */
 
   #benefit .col {

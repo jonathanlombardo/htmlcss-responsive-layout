@@ -270,7 +270,7 @@ header .navbar li {
 }
 
 #hero img {
-  max-height: 240px;
+  max-height: 280px;
 }
 
 #hero p {
@@ -295,8 +295,7 @@ header .navbar li {
 }
 
 #planning .card > * {
-  /* padding-top: var(--space-m); */
-  padding-bottom: var(--space-m);
+  margin-bottom: var(--space-m);
 }
 
 #planning .col:last-of-type .card {
@@ -322,30 +321,84 @@ header .navbar li {
 
 #planning .arrow {
   display: inline-block;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   border-radius: 50%;
   background-color: var(--main-color);
   width: 4rem;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
+}
+
+#planning .arrow i {
   line-height: 4rem;
-  padding-bottom: 0;
-  margin-bottom: var(--space-m);
 }
 
 /* ##PARTNERS */
+
+#partners {
+  font-size: var(--text-m);
+  text-align: center;
+}
 
 #partners .col {
   width: 100%;
 }
 
-#partners .col:first-of-type .card {
-  background-color: transparent;
+#partners .card:not(.content-desc) {
+  padding-top: var(--space-m);
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
 }
 
-#partners .col .card {
+#partners .col:not(:first-of-type) .card {
   background-color: var(--main-color);
+  color: var(--text-main-color-invert);
+}
+
+#partners .card *:not(.row, .col) {
+  margin-bottom: var(--space-m);
+}
+
+#partners .card .row {
+  align-items: center;
+}
+
+#partners .card .col {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: fit-content;
+}
+
+#partners .card .col:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+#partners h2 {
+  font-size: var(--text-l);
+  color: var(--main-color);
+}
+
+#partners img {
+  clip-path: circle(39%);
+  max-width: 139%;
+}
+
+#partners .card p {
+  line-height: 30px;
+}
+
+#partners .testimonial-name {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+#partners .card i[class|="fa"] {
+  margin-bottom: 0;
+  padding-bottom: 2px;
+}
+
+#partners .card .fa-quote-left {
+  position: relative;
+  bottom: 8px;
 }
 
 /* ##BENEFIT */
@@ -354,7 +407,7 @@ header .navbar li {
   width: 100%;
 }
 
-#benefit .card {
+#benefit .col .card {
   background-color: var(--text-main-color-invert);
   color: var(--main-color);
 }
