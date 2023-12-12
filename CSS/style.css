@@ -509,7 +509,7 @@ header .navbar li {
   font-size: clamp(60px, 21.4vw, 1000px);
 }
 
-#about-us .btn.trans i {
+#about-us .btn.primary i {
   margin-right: 1em;
 }
 
@@ -554,6 +554,27 @@ header .navbar li {
   content: " •";
 }
 
-#get-started .copyright a {
+#get-started .copyright a:link {
+  text-decoration: underline;
+}
+
+/* ##FOOTER */
+
+footer {
+  text-align: center;
+  font-size: var(--text-s);
+  color: var(--text-main-color-invert);
+  background-color: var(--footer-color);
+}
+
+footer p:first-child {
+  margin-bottom: var(--space-m);
+}
+
+footer p:last-child {
+  margin-top: var(--space-m);
+}
+
+footer a:link {
   text-decoration: underline;
 }
