@@ -36,6 +36,7 @@ i {
 /* --CUSTOM PROPS */
 
 :root {
+  --text-xxl: 4rem;
   --text-xl: 2.7rem;
   --text-l: 2rem;
   --text-xm: 1.7rem;
@@ -137,8 +138,8 @@ a.btn.hero {
 }
 
 a.btn.trans {
-  background-color: var(--main-color);
-  color: var(--text-main-color-invert);
+  background-color: var(--text-main-color-invert);
+  color: var(--main-color);
 }
 
 a.btn:hover {
@@ -218,7 +219,8 @@ section:nth-of-type(even) {
   color: var(--text-main-color-invert);
 }
 
-section .container {
+section .container,
+footer .container {
   padding-top: var(--space-m);
   padding-bottom: var(--space-m);
 }
@@ -509,4 +511,49 @@ header .navbar li {
 
 #about-us .btn.trans i {
   margin-right: 1em;
+}
+
+/* ##GET STARTED */
+
+#get-started {
+  text-align: center;
+}
+
+#get-started .uptitle {
+  font-size: var(--text-m);
+  font-weight: 100;
+  opacity: 85%;
+  margin-bottom: var(--space-m);
+}
+
+#get-started .title-desc {
+  font-size: var(--text-l);
+  margin-bottom: var(--space-m);
+}
+
+#get-started .title {
+  font-size: var(--text-xxl);
+  color: var(--text-marked-color);
+  margin-bottom: var(--space-m);
+}
+
+#get-started p {
+  margin-bottom: var(--space-m);
+}
+
+#get-started .btn {
+  margin-bottom: var(--space-m);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 20px 100px;
+  border-radius: 30px;
+}
+
+#get-started .copyright > *:not(:last-child)::after {
+  content: " •";
+}
+
+#get-started .copyright a {
+  text-decoration: underline;
 }
