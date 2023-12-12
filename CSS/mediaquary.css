@@ -100,7 +100,7 @@
 
   /* #PARTNERS */
 
-  #partners .card {
+  #partners .col:not(:first-of-type) .card {
     text-align: left;
   }
 
