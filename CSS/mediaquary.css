@@ -98,12 +98,22 @@
   /* #PLANNING */
 
   #planning .col:first-of-type {
-    width: 60%;
+    width: 50%;
+  }
+
+  #planning .col:first-of-type .card img {
+    margin-bottom: var(--space-l);
   }
 
   #planning .col:last-of-type {
-    width: 40%;
+    width: 50%;
     align-self: flex-end;
+  }
+
+  #planning .col:last-of-type .card img {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* #PARTNERS */

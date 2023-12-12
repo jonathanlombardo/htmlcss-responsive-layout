@@ -44,6 +44,7 @@ i {
   --text-s: 1rem;
 
   --space-m: 2rem;
+  --space-l: 4rem;
   --line-l: 30px;
 
   --li-margin: 1em; /* margini lista FontAwesome */
@@ -285,8 +286,8 @@ header .navbar li {
 }
 
 #hero .card .col:last-of-type {
-  align-self: flex-end;
   display: flex;
+  align-self: flex-end;
   justify-content: center;
 }
 
@@ -366,6 +367,10 @@ header .navbar li {
 
 #partners .col {
   width: 100%;
+}
+
+#partners .card.content-desc > *:first-child {
+  font-weight: 100;
 }
 
 #partners .card:not(.content-desc) {
